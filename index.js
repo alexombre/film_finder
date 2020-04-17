@@ -71,7 +71,7 @@ function handleIntersect(entries, observer) {
 }
 
 const callApi = async () => {
-    const URL = `http://www.omdbapi.com/?s=${search()}&apikey=128da5ac`;
+    const URL = `https://www.omdbapi.com/?s=${search()}&apikey=128da5ac`;
     const url_test ="https://www.omdbapi.com/?i=tt3896198&apikey=128da5ac";
     const selector = $(".container");
     const response = await fetch(URL);
