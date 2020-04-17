@@ -72,7 +72,7 @@ function handleIntersect(entries, observer) {
 
 const callApi = async () => {
     const URL = `http://www.omdbapi.com/?s=${search()}&apikey=128da5ac`;
-    const url_test ="http://www.omdbapi.com/?i=tt3896198&apikey=128da5ac";
+    const url_test ="https://www.omdbapi.com/?i=tt3896198&apikey=128da5ac";
     const selector = $(".container");
     const response = await fetch(URL);
     const text = await response.json();
@@ -95,7 +95,7 @@ $('.input-group-append .btn').click(callApi);
 
 $('#exampleModalCenter').on('show.bs.modal', async (event) => {
   var id = $(event.relatedTarget).attr('id'); // Button that triggered the modal
-  const URL = `http://www.omdbapi.com/?i=${id}&apikey=128da5ac`;
+  const URL = `https://www.omdbapi.com/?i=${id}&apikey=128da5ac`;
   const response = await fetch(URL);
   const text = await response.json();
   
